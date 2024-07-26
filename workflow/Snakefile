@@ -1,0 +1,7 @@
+include: "rules/common.smk"
+
+# Modules
+include: "rules/ref.smk"
+include: "rules/variant_calling.smk"
+
+# Rules

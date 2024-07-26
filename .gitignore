@@ -1,0 +1,6 @@
+.snakemake
+log
+results
+config/references.tsv
+config/samples.txt
+resources/

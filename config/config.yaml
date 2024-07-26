@@ -1,0 +1,26 @@
+pop_name: "VXS"
+samples_file: config/samples.txt
+references: config/references.tsv
+
+base_dir: /opt/InterspecificCommonBeanDenovoGenomeAssembly/5.Others
+
+bigtmp: tmpdir/
+
+NGSEP:
+    path: /home/scruz/software/NGSEPcore/NGSEPcore_5.0.0.jar
+    SingleSampleVariantsDetector:
+        h: 0.0001
+        maxBaseQS: 30
+        minQuality: 40
+        maxAlnsPerStartPos: 100
+        ignore5: 7
+        ignore3: 8
+    VCFFilter:
+        QC_thresold: 40
+Beagle:
+    path: /home/scruz/software/beagle.22Jul22.46e.jar
+    map: /home/scruz/projects/BAT_881xG21212/notebooks/data/MGC_marker_placements_for_genetic_map_predicted.map
+    ne: 100
+    ap: true
+    gp: true
+
